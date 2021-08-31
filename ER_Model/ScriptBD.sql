@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.2.0.183.1957
---   en:        2021-08-31 13:51:30 CST
+--   en:        2021-08-31 15:04:19 CST
 --   sitio:      SQL Server 2012
 --   tipo:      SQL Server 2012
 
@@ -66,9 +66,9 @@ ALTER TABLE Employee ADD CONSTRAINT Employee_PK PRIMARY KEY CLUSTERED (id_employ
      ALLOW_ROW_LOCKS = ON )
 GO
 
-CREATE TABLE "Function" 
+CREATE TABLE Functionc 
     (
-     id_function INTEGER NOT NULL , 
+     id_functionC INTEGER NOT NULL , 
      time DATETIME NOT NULL , 
      Movie_id_movie INTEGER NOT NULL , 
      Cinema_id_cinema INTEGER NOT NULL , 
@@ -76,7 +76,7 @@ CREATE TABLE "Function"
     )
 GO
 
-ALTER TABLE "Function" ADD CONSTRAINT Function_PK PRIMARY KEY CLUSTERED (id_function)
+ALTER TABLE Functionc ADD CONSTRAINT Function_PK PRIMARY KEY CLUSTERED (id_functionC)
      WITH (
      ALLOW_PAGE_LOCKS = ON , 
      ALLOW_ROW_LOCKS = ON )
@@ -100,9 +100,7 @@ CREATE TABLE Movie
     (
      id_movie INTEGER NOT NULL , 
      name VARCHAR (100) NOT NULL , 
-     date_in UNKNOWN 
---  ERROR: Datatype UNKNOWN is not allowed 
-                    NOT NULL , 
+     date_in DATETIME NOT NULL , 
      state BIT NOT NULL , 
      description VARCHAR (200) , 
      Gender_id_gender INTEGER NOT NULL 
@@ -149,11 +147,11 @@ CREATE TABLE Ticket
     (
      id_ticket INTEGER NOT NULL , 
      purchase_date DATETIME NOT NULL , 
-     Function_id_function INTEGER NOT NULL , 
      Customer_id_customer INTEGER NOT NULL , 
      Employee_id_employee INTEGER NOT NULL , 
      Seat_id_seat INTEGER NOT NULL , 
-     Pyment_Type_id_pymenttype INTEGER NOT NULL 
+     Pyment_Type_id_pymenttype INTEGER NOT NULL , 
+     Functionc_id_functionC INTEGER NOT NULL 
     )
 GO
 
@@ -190,7 +188,7 @@ ALTER TABLE Cost
     ON UPDATE NO ACTION 
 GO
 
-ALTER TABLE "Function" 
+ALTER TABLE Functionc 
     ADD CONSTRAINT Function_Cinema_FK FOREIGN KEY 
     ( 
      Cinema_id_cinema
@@ -203,7 +201,7 @@ ALTER TABLE "Function"
     ON UPDATE NO ACTION 
 GO
 
-ALTER TABLE "Function" 
+ALTER TABLE Functionc 
     ADD CONSTRAINT Function_Cost_FK FOREIGN KEY 
     ( 
      Cost_id_cost
@@ -216,7 +214,7 @@ ALTER TABLE "Function"
     ON UPDATE NO ACTION 
 GO
 
-ALTER TABLE "Function" 
+ALTER TABLE Functionc 
     ADD CONSTRAINT Function_Movie_FK FOREIGN KEY 
     ( 
      Movie_id_movie
@@ -282,13 +280,13 @@ ALTER TABLE Ticket
 GO
 
 ALTER TABLE Ticket 
-    ADD CONSTRAINT Ticket_Function_FK FOREIGN KEY 
+    ADD CONSTRAINT Ticket_Functionc_FK FOREIGN KEY 
     ( 
-     Function_id_function
+     Functionc_id_functionC
     ) 
-    REFERENCES ""Function"" 
+    REFERENCES Functionc 
     ( 
-     id_function 
+     id_functionC 
     ) 
     ON DELETE NO ACTION 
     ON UPDATE NO ACTION 
@@ -348,5 +346,5 @@ GO
 -- 
 -- DROP DATABASE                            0
 -- 
--- ERRORS                                   1
+-- ERRORS                                   0
 -- WARNINGS                                 0

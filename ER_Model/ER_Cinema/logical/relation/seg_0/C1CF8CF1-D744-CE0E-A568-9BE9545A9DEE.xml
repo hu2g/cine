@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_7" directorySegmentName="seg_0" id="A9192507-7C17-1E0B-910A-961E4E7D334B">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_17" directorySegmentName="seg_0" id="C1CF8CF1-D744-CE0E-A568-9BE9545A9DEE">
 <createdBy>Huriel Gómez</createdBy>
-<createdTime>2021-08-31 19:21:13 UTC</createdTime>
+<createdTime>2021-08-31 21:03:55 UTC</createdTime>
 <ownerDesignName>ER_Cinema</ownerDesignName>
 <engineerTo>
 <item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>

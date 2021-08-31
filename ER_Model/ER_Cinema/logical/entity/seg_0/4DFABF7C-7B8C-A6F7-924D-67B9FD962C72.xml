@@ -47,7 +47,9 @@
 <engineerTo>
 <item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="state" id="E0C8E859-4000-88A5-7A94-562315DEBC27">

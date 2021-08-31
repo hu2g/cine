@@ -1,14 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8DCC8510-FEE2-424F-DF07-5EC503C491C4" name="Function">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8DCC8510-FEE2-424F-DF07-5EC503C491C4" name="Functionc">
 <createdBy>Huriel Gómez</createdBy>
 <createdTime>2021-08-31 19:42:40 UTC</createdTime>
 <generatorID>6A2EFB3E-6E93-E213-5AEE-903365A8B8B0</generatorID>
 <ownerDesignName>ER_Cinema</ownerDesignName>
+<ordsAlias>function</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_function" id="68E3FFB5-9793-15B2-9C84-86260AE406A1">
+<Column name="id_functionC" id="68E3FFB5-9793-15B2-9C84-86260AE406A1">
 <createdBy>Huriel Gómez</createdBy>
 <createdTime>2021-08-31 19:42:40 UTC</createdTime>
 <generatorID>262ED041-56A4-345E-305F-909BBA86354E</generatorID>
