@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="CA2772BC-A918-629F-1B46-FDCD5CEC4738">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 14:23:04 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

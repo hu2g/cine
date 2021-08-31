@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D3F43EA4-4AC4-92B3-55D4-D19E074998A0" name="Pyment_Type">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:36:29 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pymenttype" id="84AF7D03-97DA-BEF8-7708-EA5DEF504528">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:36:52 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="CDFE0D6A-B8F0-D314-2EC6-BABA9B2D8141">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:37:15 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="E46BAFD1-FEA6-FC44-0560-69CEDD605510">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:37:46 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="74210483-5A24-8EEC-387B-F9CDACA90618" name="Pyment_Type PK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:37:09 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>84AF7D03-97DA-BEF8-7708-EA5DEF504528</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

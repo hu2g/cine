@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EE48BB39-C090-E2E0-BCB9-21652846B243" name="Employee">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:16:27 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_employee" id="800B4C84-99F5-2141-4653-C622B8725F5F">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:16:44 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="9D94CC2D-1276-E4DE-07A4-FF5F6CDEC3BD">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:17:16 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address" id="AA22C71F-0C3C-5B82-8FBA-0F7565D4D0B4">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:17:41 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone" id="D84A11F4-3482-92F4-CF59-5AF387FABF53">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:18:02 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="434879EB-527A-B265-CE34-6A8EFCD2C7C5">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:18:24 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2F427569-BC2E-D7FC-156C-29C18357B1D7" name="Empleado PK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:17:08 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>800B4C84-99F5-2141-4653-C622B8725F5F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

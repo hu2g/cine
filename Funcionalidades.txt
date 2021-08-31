@@ -1,0 +1,16 @@
+FUNCIONALIDADES
+	- Mostrar cartelera
+	- Realizar Compra de boletos
+	- Usuarios
+		+ Administrador
+		+ Empleado
+		+ Cliente
+	- Login
+		+ Inicio de sesion
+		+ Registro de usuario
+	- Agregar, Modificar, Eliminar
+		+ Peliculas
+		+ Empleados
+	- Registrar Ventas 
+
+		

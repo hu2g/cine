@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="DB41BCAD-4661-0252-4706-ABF65B48FD61" mainViewID="E66C2D5D-760D-D876-65D2-7300CC818D6B">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 14:23:01 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

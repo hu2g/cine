@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6A2EFB3E-6E93-E213-5AEE-903365A8B8B0" name="Function">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:28:18 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_function" id="262ED041-56A4-345E-305F-909BBA86354E">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:28:24 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="time" id="C05A128A-F971-8510-3651-247C8859A5C6">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:29:07 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_movie" id="EADEF357-96F6-0368-3E69-6B9563F2E4A2">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:35:37 UTC</createdTime>
+<generatorID>063A1F9E-5FB1-AE9D-C5F4-DCA93485E5AD</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<referedAttribute>44E431A4-C63A-62D9-61A0-60F026BCAC8B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cinema" id="A53EC952-86A5-C715-F724-D357C56AACEA">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:48:48 UTC</createdTime>
+<generatorID>850FC46F-DE7C-9E28-EB7F-A5D2FA1F5A10</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<referedAttribute>C15BD701-2818-9785-EBF9-B333AF88E1AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cost" id="9F93A45D-DD5D-388E-738F-A5E80F0CEA8A">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:35:25 UTC</createdTime>
+<generatorID>E1453A7C-CC9D-148B-022E-1830BBD5F4A9</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<referedAttribute>A00BEA04-291B-191A-7FB4-64F0B9967ED4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FB83C180-2A41-5441-DE20-26581300920C" name="Function PK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:28:35 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>262ED041-56A4-345E-305F-909BBA86354E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

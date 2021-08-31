@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC3A4B79-E494-AE8B-B82B-17747A3C81FA" name="Customer">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>1ED636F4-825E-A980-F80D-D217877E6BA4</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_customer" id="C81EDB19-692D-140A-BF42-2DD67F02136A">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>9B716D18-421B-67ED-C8D5-750841318E50</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="9DB9F118-A1B4-248F-7499-1FCC5DB78A66">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>1D38B525-5E38-3774-D549-777B0B39CA23</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="E3DE2F57-A5FB-A5E7-8575-0526A23312DD">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>C7B20F68-93F1-38A3-7A87-F6F253704319</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone" id="A2043AA6-8A2D-6AA2-F48F-728A3CDED52E">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>958D4F1D-EB8F-672F-CE5F-E84C7632553F</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nit" id="2A9ADDAC-D28C-41D0-271E-31B718E9CED8">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>BFD62059-10D6-8A9F-A474-423EBF6DF57D</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5CD0AF1-B953-9B53-C2FD-1D14794B18E7" name="Customer_PK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>5B599B6E-5BE8-A215-B605-AAEF28FECEDC</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C81EDB19-692D-140A-BF42-2DD67F02136A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

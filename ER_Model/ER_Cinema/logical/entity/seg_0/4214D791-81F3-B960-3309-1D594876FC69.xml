@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4214D791-81F3-B960-3309-1D594876FC69" name="Ticket">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 17:02:12 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_ticket" id="B0A48C80-03B0-823C-C49B-5F29BA9A5B1E">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 17:02:18 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="purchase_date" id="E181602E-9F31-473D-5D80-DEC0B8F95425">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 17:02:57 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_function" id="E6DD871A-5A74-E9DE-6329-050B923279F4">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:21:13 UTC</createdTime>
+<generatorID>A9192507-7C17-1E0B-910A-961E4E7D334B</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<referedAttribute>262ED041-56A4-345E-305F-909BBA86354E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_customer" id="54693219-FB23-EEA4-3833-E91982A6A171">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:21:27 UTC</createdTime>
+<generatorID>3303E105-8149-A9D9-8F50-CC5E0FBF4E97</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<referedAttribute>9B716D18-421B-67ED-C8D5-750841318E50</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_employee" id="0F27589E-B13B-8B1A-85EC-B6F73927D1A1">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:21:43 UTC</createdTime>
+<generatorID>B91FE6DA-FDE0-641A-A807-0F5CC3FC6DC4</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<referedAttribute>800B4C84-99F5-2141-4653-C622B8725F5F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_seat" id="78E1012A-F9A8-97C6-8E91-D80462BB3F1F">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:21:59 UTC</createdTime>
+<generatorID>7936D3BF-12CC-C00C-EA04-965784D03BB9</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<referedAttribute>AD0CCA13-00B9-17BF-C04D-EAE02F309DAB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pymenttype" id="B0655083-7940-067D-5A97-C6EC2A426BB5">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:38:41 UTC</createdTime>
+<generatorID>8A3E91A8-DB76-DC3A-B753-D9B6977073D5</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<referedAttribute>84AF7D03-97DA-BEF8-7708-EA5DEF504528</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8A621117-0246-8CDB-B378-0B107F5133DA" name="Ticket PK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 17:02:32 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B0A48C80-03B0-823C-C49B-5F29BA9A5B1E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

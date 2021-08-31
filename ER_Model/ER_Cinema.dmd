@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ER_Cinema" id="09AC0198-B9CA-01D1-960B-03C8771BD995" version="3.5">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 14:23:01 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>09AC0198-B9CA-01D1-960B-03C8771BD995</designId>
+</OSDM_Design>

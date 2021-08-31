@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="063A1F9E-5FB1-AE9D-C5F4-DCA93485E5AD">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 16:35:37 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<sourcePk>7846C351-7C82-4561-006C-D6A58E0388B4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4DFABF7C-7B8C-A6F7-924D-67B9FD962C72</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6A2EFB3E-6E93-E213-5AEE-903365A8B8B0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

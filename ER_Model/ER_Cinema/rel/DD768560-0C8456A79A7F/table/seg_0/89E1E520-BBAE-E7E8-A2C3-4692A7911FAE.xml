@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89E1E520-BBAE-E7E8-A2C3-4692A7911FAE" name="Pyment_Type">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>D3F43EA4-4AC4-92B3-55D4-D19E074998A0</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pymenttype" id="40F1432D-9BCA-9103-00B6-F455F2E7E7C9">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>84AF7D03-97DA-BEF8-7708-EA5DEF504528</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="8D5B3ED5-7EF7-40BD-4C69-60EA5D47A47C">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>CDFE0D6A-B8F0-D314-2EC6-BABA9B2D8141</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="E2C7EF2B-D88A-FD5A-581A-C91B5F1A0741">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>E46BAFD1-FEA6-FC44-0560-69CEDD605510</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="52FD6ADE-E7F9-D720-1FC9-80A09FB7401F" name="Pyment_Type_PK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>74210483-5A24-8EEC-387B-F9CDACA90618</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40F1432D-9BCA-9103-00B6-F455F2E7E7C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
