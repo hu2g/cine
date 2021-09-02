@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B835ED7-BD04-7102-C36D-A24754ACEF14" name="Employee">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>EE48BB39-C090-E2E0-BCB9-21652846B243</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_employee" id="66F20C89-C8E1-9629-5856-FEC71D812F43">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>800B4C84-99F5-2141-4653-C622B8725F5F</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="7FCA6091-1283-2837-C3C9-E12A8C9B4353">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>9D94CC2D-1276-E4DE-07A4-FF5F6CDEC3BD</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="D1FC4BD7-CCA1-83CA-D85D-C5916AB5B87F">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>AA22C71F-0C3C-5B82-8FBA-0F7565D4D0B4</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone" id="357E5149-BD8D-1B6C-AC44-DC96276E4173">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>D84A11F4-3482-92F4-CF59-5AF387FABF53</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="DCFEED05-2D5B-A8F2-4985-7A309DA36D59">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>434879EB-527A-B265-CE34-6A8EFCD2C7C5</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D44205CE-9152-5083-722D-3980A0AF750B" name="Employee_PK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>2F427569-BC2E-D7FC-156C-29C18357B1D7</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66F20C89-C8E1-9629-5856-FEC71D812F43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

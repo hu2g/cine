@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FF01333-5B99-C0C2-27A1-4FB41DA13838" name="Category">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-09-01 13:36:14 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_category" id="6D0B0348-A328-C014-7C16-66A449A17D50">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-09-01 13:37:10 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="C3D30158-24C0-635F-6C50-A0D383B2DB5D">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-09-01 13:37:10 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="E4D1FAC6-C92E-EA46-9BDC-D13BA5521D17">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-09-01 13:37:41 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="704720DD-879F-3CC6-ED25-284372CBFE67" name="Category_PK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-09-01 13:37:10 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D0B0348-A328-C014-7C16-66A449A17D50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8DCC8510-FEE2-424F-DF07-5EC503C491C4" name="Functionc">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>6A2EFB3E-6E93-E213-5AEE-903365A8B8B0</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<ordsAlias>function</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_functionC" id="68E3FFB5-9793-15B2-9C84-86260AE406A1">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>262ED041-56A4-345E-305F-909BBA86354E</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="time" id="1C5928FB-348F-3899-1A4E-8C4CD8B3EDCB">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>C05A128A-F971-8510-3651-247C8859A5C6</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Movie_id_movie" id="B11A2883-D723-82E8-E4AC-A9CE60FB665B">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>EADEF357-96F6-0368-3E69-6B9563F2E4A2</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E86A697-1B9C-4BE5-B84D-0C674640ED5C" referredColumn="64C8774D-252E-F899-A329-D61378E8E755"/>
+</associations>
+</Column>
+<Column name="Cinema_id_cinema" id="52AA4778-88B4-8AC4-E476-BEF8FAD70E2F">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>A53EC952-86A5-C715-F724-D357C56AACEA</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="469F2364-9739-A4B6-F7FC-7FB5F0848F78" referredColumn="DCF9BD70-97BE-D59E-FC07-8E31FABC3644"/>
+</associations>
+</Column>
+<Column name="Type_Function_id_typefunction" id="2D3BF7D2-BFF4-827D-AC27-8CF738187BE8">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-09-01 13:40:29 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF637E07-DD15-2152-8882-91F967292B56" referredColumn="606AD7B7-D8A7-753C-32AF-858252401A52"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="77EC9B9B-781C-6C53-944A-E23B9BE168D2" name="Function_PK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>FB83C180-2A41-5441-DE20-26581300920C</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68E3FFB5-9793-15B2-9C84-86260AE406A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B50E2FED-B1EA-0644-F06A-944FE34A5327" name="Function_Movie_FK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>063A1F9E-5FB1-AE9D-C5F4-DCA93485E5AD</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B11A2883-D723-82E8-E4AC-A9CE60FB665B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84759E15-02F8-3CAA-0FDF-1FC7B688C050" name="Function_Cinema_FK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-08-31 19:42:40 UTC</createdTime>
+<generatorID>850FC46F-DE7C-9E28-EB7F-A5D2FA1F5A10</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52AA4778-88B4-8AC4-E476-BEF8FAD70E2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B691B5E1-717E-E1F4-A781-0B24E6B7C6DE" name="Functionc_Type_Function_FK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-09-01 13:40:29 UTC</createdTime>
+<generatorID>547A19C7-2FB9-A522-DFF0-2E69DDEDB86B</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D3BF7D2-BFF4-827D-AC27-8CF738187BE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

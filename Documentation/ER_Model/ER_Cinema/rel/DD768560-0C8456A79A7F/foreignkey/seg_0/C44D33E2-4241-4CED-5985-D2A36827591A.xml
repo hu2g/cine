@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C44D33E2-4241-4CED-5985-D2A36827591A" containerWithKeyObject="C8DB6BD6-CEBD-2496-1EC0-0FDBCFF33755" localFKIndex="10AB95AF-31E8-CEEE-EEC5-2699CFFEDD3C" name="Cost_Category_FK">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-09-01 13:39:58 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<referredTableLongName>Category</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1FF01333-5B99-C0C2-27A1-4FB41DA13838</referredTableID>
+<keyObject>704720DD-879F-3CC6-ED25-284372CBFE67</keyObject>
+<referredKeyID>704720DD-879F-3CC6-ED25-284372CBFE67</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_category</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

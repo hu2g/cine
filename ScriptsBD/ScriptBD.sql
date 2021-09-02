@@ -1,13 +1,27 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.2.0.183.1957
---   en:        2021-08-31 15:04:19 CST
+--   en:        2021-09-01 07:49:21 CST
 --   sitio:      SQL Server 2012
 --   tipo:      SQL Server 2012
 
 
 
+CREATE TABLE Category 
+    (
+     id_category INTEGER NOT NULL IDENTITY(1,1) , 
+     name VARCHAR (20) NOT NULL , 
+     description VARCHAR (100) 
+    )
+GO
+
+ALTER TABLE Category ADD CONSTRAINT Category_PK PRIMARY KEY CLUSTERED (id_category)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
 CREATE TABLE Cinema 
     (
-     id_cinema INTEGER NOT NULL , 
+     id_cinema INTEGER NOT NULL IDENTITY(1,1) , 
      name VARCHAR (50) NOT NULL , 
      description VARCHAR (100) 
     )
@@ -21,10 +35,10 @@ GO
 
 CREATE TABLE Cost 
     (
-     id_cost INTEGER NOT NULL , 
-     category VARCHAR (50) NOT NULL , 
+     id_cost INTEGER NOT NULL IDENTITY(1,1) , 
      price DECIMAL (10,5) NOT NULL , 
-     Type_Function_id_typefunction INTEGER NOT NULL 
+     Type_Function_id_typefunction INTEGER NOT NULL , 
+     Category_id_category INTEGER NOT NULL 
     )
 GO
 
@@ -36,7 +50,7 @@ GO
 
 CREATE TABLE Customer 
     (
-     id_customer INTEGER NOT NULL , 
+     id_customer INTEGER NOT NULL IDENTITY(1,1) , 
      name VARCHAR (100) , 
      address VARCHAR (100) , 
      phone VARCHAR (20) , 
@@ -52,11 +66,11 @@ GO
 
 CREATE TABLE Employee 
     (
-     id_employee INTEGER NOT NULL , 
+     id_employee INTEGER NOT NULL IDENTITY(1,1) , 
      name VARCHAR (60) NOT NULL , 
      address VARCHAR (100) NOT NULL , 
-     phone INTEGER NOT NULL , 
-     email VARCHAR 
+     phone VARCHAR (20) NOT NULL , 
+     email VARCHAR (30) 
     )
 GO
 
@@ -68,11 +82,11 @@ GO
 
 CREATE TABLE Functionc 
     (
-     id_functionC INTEGER NOT NULL , 
+     id_functionC INTEGER NOT NULL IDENTITY(1,1) , 
      time DATETIME NOT NULL , 
      Movie_id_movie INTEGER NOT NULL , 
      Cinema_id_cinema INTEGER NOT NULL , 
-     Cost_id_cost INTEGER NOT NULL 
+     Type_Function_id_typefunction INTEGER NOT NULL 
     )
 GO
 
@@ -84,7 +98,7 @@ GO
 
 CREATE TABLE Gender 
     (
-     id_gender INTEGER NOT NULL , 
+     id_gender INTEGER NOT NULL IDENTITY(1,1) , 
      name VARCHAR (100) NOT NULL , 
      description VARCHAR (200) 
     )
@@ -98,7 +112,7 @@ GO
 
 CREATE TABLE Movie 
     (
-     id_movie INTEGER NOT NULL , 
+     id_movie INTEGER NOT NULL IDENTITY(1,1) , 
      name VARCHAR (100) NOT NULL , 
      date_in DATETIME NOT NULL , 
      state BIT NOT NULL , 
@@ -115,7 +129,7 @@ GO
 
 CREATE TABLE Pyment_Type 
     (
-     id_pymenttype INTEGER NOT NULL , 
+     id_pymenttype INTEGER NOT NULL IDENTITY(1,1) , 
      name VARCHAR (100) , 
      description VARCHAR (200) 
     )
@@ -129,7 +143,7 @@ GO
 
 CREATE TABLE Seat 
     (
-     id_seat INTEGER NOT NULL , 
+     id_seat INTEGER NOT NULL IDENTITY(1,1) , 
      row INTEGER NOT NULL , 
      "column" INTEGER NOT NULL , 
      state BIT NOT NULL , 
@@ -145,13 +159,14 @@ GO
 
 CREATE TABLE Ticket 
     (
-     id_ticket INTEGER NOT NULL , 
+     id_ticket INTEGER NOT NULL IDENTITY(1,1) , 
      purchase_date DATETIME NOT NULL , 
      Customer_id_customer INTEGER NOT NULL , 
      Employee_id_employee INTEGER NOT NULL , 
      Seat_id_seat INTEGER NOT NULL , 
      Pyment_Type_id_pymenttype INTEGER NOT NULL , 
-     Functionc_id_functionC INTEGER NOT NULL 
+     Functionc_id_functionC INTEGER NOT NULL , 
+     Cost_id_cost INTEGER NOT NULL 
     )
 GO
 
@@ -163,7 +178,7 @@ GO
 
 CREATE TABLE Type_Function 
     (
-     id_typefunction INTEGER NOT NULL , 
+     id_typefunction INTEGER NOT NULL IDENTITY(1,1) , 
      name VARCHAR (100) NOT NULL , 
      description VARCHAR (200) 
     )
@@ -173,6 +188,19 @@ ALTER TABLE Type_Function ADD CONSTRAINT Type_Function_PK PRIMARY KEY CLUSTERED 
      WITH (
      ALLOW_PAGE_LOCKS = ON , 
      ALLOW_ROW_LOCKS = ON )
+GO
+
+ALTER TABLE Cost 
+    ADD CONSTRAINT Cost_Category_FK FOREIGN KEY 
+    ( 
+     Category_id_category
+    ) 
+    REFERENCES Category 
+    ( 
+     id_category 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
 GO
 
 ALTER TABLE Cost 
@@ -202,19 +230,6 @@ ALTER TABLE Functionc
 GO
 
 ALTER TABLE Functionc 
-    ADD CONSTRAINT Function_Cost_FK FOREIGN KEY 
-    ( 
-     Cost_id_cost
-    ) 
-    REFERENCES Cost 
-    ( 
-     id_cost 
-    ) 
-    ON DELETE NO ACTION 
-    ON UPDATE NO ACTION 
-GO
-
-ALTER TABLE Functionc 
     ADD CONSTRAINT Function_Movie_FK FOREIGN KEY 
     ( 
      Movie_id_movie
@@ -222,6 +237,19 @@ ALTER TABLE Functionc
     REFERENCES Movie 
     ( 
      id_movie 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE Functionc 
+    ADD CONSTRAINT Functionc_Type_Function_FK FOREIGN KEY 
+    ( 
+     Type_Function_id_typefunction
+    ) 
+    REFERENCES Type_Function 
+    ( 
+     id_typefunction 
     ) 
     ON DELETE NO ACTION 
     ON UPDATE NO ACTION 
@@ -248,6 +276,19 @@ ALTER TABLE Seat
     REFERENCES Cinema 
     ( 
      id_cinema 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE Ticket 
+    ADD CONSTRAINT Ticket_Cost_FK FOREIGN KEY 
+    ( 
+     Cost_id_cost
+    ) 
+    REFERENCES Cost 
+    ( 
+     id_cost 
     ) 
     ON DELETE NO ACTION 
     ON UPDATE NO ACTION 
@@ -322,9 +363,9 @@ GO
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            11
+-- CREATE TABLE                            12
 -- CREATE INDEX                             0
--- ALTER TABLE                             22
+-- ALTER TABLE                             25
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
