@@ -68,6 +68,19 @@
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="cover_image" id="6E5CDE9D-69D8-36BD-42EF-D3F183A2D35F">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-09-02 21:25:44 UTC</createdTime>
+<generatorID>628D3A9C-46B9-5AA2-8F04-A92136DB1A06</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="Gender_id_gender" id="7698FC92-7A1D-DA6E-8B3D-D6A800613F31">
 <createdBy>Huriel Gómez</createdBy>
 <createdTime>2021-08-31 19:42:40 UTC</createdTime>

@@ -27,19 +27,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="category" id="73B89E45-9F58-7904-12EC-5509DAACE21B">
-<createdBy>Huriel Gómez</createdBy>
-<createdTime>2021-08-31 19:30:51 UTC</createdTime>
-<ownerDesignName>ER_Cinema</ownerDesignName>
-<engineerTo>
-<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="price" id="191D7DC9-F40A-B900-31A0-F596FEC01443">
 <createdBy>Huriel Gómez</createdBy>
 <createdTime>2021-08-31 19:33:11 UTC</createdTime>
@@ -54,15 +41,29 @@
 <dataTypeScale>5</dataTypeScale>
 <ownDataTypeParameters>,10,5</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_typefunction" id="0C864471-BC1C-A4CE-1867-19498E171068">
+<Attribute name="id_typefunction" id="D5B54D37-34FC-37DA-D5FD-BD5E7DCA5534">
 <createdBy>Huriel Gómez</createdBy>
-<createdTime>2021-08-31 19:35:15 UTC</createdTime>
-<generatorID>4F357A58-8885-D4AB-AB3A-F14FE3438DFA</generatorID>
+<createdTime>2021-09-02 21:28:23 UTC</createdTime>
+<generatorID>92B1935D-6702-63A5-4AAA-41B41798AC04</generatorID>
 <ownerDesignName>ER_Cinema</ownerDesignName>
 <engineerTo>
 <item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
 </engineerTo>
 <referedAttribute>9D5B583B-1809-C6E2-A2E5-B67C7C57CA10</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_category" id="985B3DE3-EB0B-AC43-3B2A-F8298D893F44">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-09-02 21:28:45 UTC</createdTime>
+<generatorID>381BFC47-A5D3-B023-560C-05206F6D9144</generatorID>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<referedAttribute>D717CA76-3D85-82CF-CB00-999F20111DA6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

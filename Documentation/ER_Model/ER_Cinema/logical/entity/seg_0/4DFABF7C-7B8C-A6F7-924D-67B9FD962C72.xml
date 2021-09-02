@@ -79,6 +79,20 @@
 <dataTypeSize>200</dataTypeSize>
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="cover_image" id="CA289513-795E-EDA7-792F-2F95BBF41BA8">
+<createdBy>Huriel Gómez</createdBy>
+<createdTime>2021-09-02 21:26:12 UTC</createdTime>
+<ownerDesignName>ER_Cinema</ownerDesignName>
+<engineerTo>
+<item key="DD768560-D658-A8A5-361A-0C8456A79A7F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="id_gender" id="D7338B7A-2833-A487-570C-E5C43C6C9042">
 <createdBy>Huriel Gómez</createdBy>
 <createdTime>2021-08-31 16:34:03 UTC</createdTime>
