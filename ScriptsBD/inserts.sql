@@ -232,6 +232,7 @@ insert into Functionc(time, Movie_id_movie, Cinema_id_cinema, Type_Function_id_t
 insert into Functionc(time, Movie_id_movie, Cinema_id_cinema, Type_Function_id_typefunction) values ('2021-10-06 19:00:00', 7, 1, 1);
 insert into Functionc(time, Movie_id_movie, Cinema_id_cinema, Type_Function_id_typefunction) values ('2021-10-06 20:00:00', 8, 4, 1);
 insert into Functionc(time, Movie_id_movie, Cinema_id_cinema, Type_Function_id_typefunction) values ('2021-10-06 20:00:00', 3, 5, 2);
+insert into Functionc(time, Movie_id_movie, Cinema_id_cinema, Type_Function_id_typefunction) values ('2021-10-06 20:00:00', 2, 2, 2);
 -- select * from Functionc;
 
 insert into Ticket(purchase_date, Customer_id_customer, Employee_id_employee, Seat_id_seat, Pyment_Type_id_pymenttype, Functionc_id_functionC, Cost_id_cost) values (GETDATE(), 1, 2, 12, 1, 2, 1);
